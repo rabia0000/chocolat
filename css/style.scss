@@ -1,10 +1,23 @@
+// @media  (max-width: 600px) {
+//     aside {
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         height: 100px;
+//         width: auto;
+//     }
+
+//  }
+
 body {
     display: flex;
-    
+
 
     flex-wrap: wrap;
     margin: 0 10%;
     background-color: #048b9a;
+
+
 
     header {
         width: 100%;
@@ -30,11 +43,10 @@ body {
                 /*margin: 0 3.1em; */
                 text-decoration: none;
                 color: white;
+              
             }
 
         }
-
-
     }
 }
 
@@ -50,7 +62,7 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
 
 
@@ -67,7 +79,7 @@ body {
 
 
         img {
-           margin-top: 1rem;
+            margin-top: 1rem;
             width: 100%;
             border-radius: 10px;
         }
@@ -89,13 +101,15 @@ body {
 aside {
     border: 2px solid rgb(170, 14, 14);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+
     width: 30%;
     background-color: white;
-  
+
     justify-content: flex-start;
+
+
 
     h2 {
         width: 100%;
@@ -103,8 +117,10 @@ aside {
         font-size: 1.4em;
         background-color: #63412b;
         color: white;
-    }
 
+        
+        }
 
+ }
 
-}
+    
