@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin: 0 15%;
+    background-color: #048b9a;
+
+    header {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+
+        #logo {
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            font-size: 1.6em;
+            background-color: #63412b;
+
+            a {
+                /*margin: 0 3.1em; */
+                text-decoration: none;
+                color: white;
+            }
+
+        }
+
+
+    }
+}
+
+
+
+
+
+
+/* element h2 */
+h2 {
+    font-size: 1.4em;
+    background-color: #63412b;
+    color: white;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    
+   
+   
+    section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+       
+      
+        img{
+        width: 31rem;
+      }
+      h2{
+        text-align: center;
+        width: 100%;
+      }
+       
+    }
+    
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 90%;
+
+  
+    background-color: white;
+    
+    h2{
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        border-radius: 10px;
+    }
+    body > main > aside > p:nth-child(2){
+        font-size: 12px;;
+    }
+    
+}
