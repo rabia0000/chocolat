@@ -1,14 +1,13 @@
+$element-color: #5b3e2c;
+$element-size: 1.4em;
+$color: white;
 
 body {
     display: flex;
-
-
     flex-wrap: wrap;
     margin: 0 10%;
     background-color: #1b8b8f;
-
-
-
+    
     header {
         width: 100%;
         display: flex;
@@ -22,108 +21,97 @@ body {
 
         nav {
             display: flex;
-            flex-direction: row;
             justify-content: space-evenly;
             flex-wrap: wrap;
             font-size: 1.6em;
-            background-color: #5b3e2c;
+            background-color: $element-color;
            
-
             a {
-              
                 text-decoration: none;
-                color: white;
+                color: $color;
                 padding: 10px;
-
             }
             a:hover{
                 background-color: #a79189; 
-                color: white;
-                
-              
+                color: $color;
             }
 
         }
     }
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    
-
-    section {
+    .container {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        width: 65%;
-        background-color: #448088;
-        img {
-            margin-top: 1rem;
-            width: 95%;
-        }
-
-        h2 {
-            text-align: center;
-            width: 100%;
-            font-size: 1.4em;
-            background-color: #5b3e2c;
-            color: white;
-            border-radius: 1.5rem;
-        }
-
-    }
-
-    @media (max-width: 960px) {
-
+        
+    
         section {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-          
-            width: 100%;
+            width: 65%;
+            background-color: #448088;
+            img {
+                margin-top: 1rem;
+                width: 95%;
+            }
+    
+            h2 {
+                text-align: center;
+                width: 100%;
+                font-size: $element-size;
+                background-color: $element-color;
+                color: $color;
+                border-radius: 1.5rem;
+                padding: 1rem 0;
+            }
+    
         }
-
-        img {
-            width: 100%;
+    
+        @media (max-width: 960px) {
+    
+            section {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+    
+            img {
+                width: 100%;
+            }
+    
+            h2 {
+                width: 100%;
+            }
         }
-
+    }
+    
+    aside {
+       
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 30%;
+        background-color: $color;
+       
+       
         h2 {
-            width: 100%;
+            margin: 1rem auto;
+            width: 95%;
+            text-align: center;
+            font-size: $element-size ;
+            background-color: $element-color;
+            color: $color;
+            border-radius: 10px;
+            padding: 1rem 0;
         }
+        p{
+            margin: 0 auto;
+            
+            width: 70%;
+        }
+    
     }
 }
-
-
-aside {
-   
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 34%;
-    background-color: white;
-   
-   
-    h2 {
-        margin: 1rem auto;
-        width: 95%;
-        text-align: center;
-        font-size: 1.4em;
-        background-color: #5b3e2c;
-        color: white;
-        border-radius: 10px;
-        padding: 1rem 0;
-    }
-    p{
-        margin: 0 auto;
-        
-        width: 70%;
-    }
-
-}
-
-
-   
 
 @media  (max-width: 960px) {
     .container  aside {

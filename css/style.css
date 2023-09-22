@@ -16,7 +16,6 @@ body header #logo {
 }
 body header nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
   font-size: 1.6em;
@@ -31,53 +30,52 @@ body header nav a:hover {
   background-color: #a79189;
   color: white;
 }
-
-.container {
+body .container {
   display: flex;
   flex-wrap: wrap;
 }
-.container section {
+body .container section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 65%;
   background-color: #448088;
 }
-.container section img {
+body .container section img {
   margin-top: 1rem;
   width: 95%;
 }
-.container section h2 {
+body .container section h2 {
   text-align: center;
   width: 100%;
   font-size: 1.4em;
   background-color: #5b3e2c;
   color: white;
   border-radius: 1.5rem;
+  padding: 1rem 0;
 }
 @media (max-width: 960px) {
-  .container section {
+  body .container section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
   }
-  .container img {
+  body .container img {
     width: 100%;
   }
-  .container h2 {
+  body .container h2 {
     width: 100%;
   }
 }
-
-aside {
+body aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 34%;
+  width: 30%;
   background-color: white;
 }
-aside h2 {
+body aside h2 {
   margin: 1rem auto;
   width: 95%;
   text-align: center;
@@ -87,7 +85,7 @@ aside h2 {
   border-radius: 10px;
   padding: 1rem 0;
 }
-aside p {
+body aside p {
   margin: 0 auto;
   width: 70%;
 }
