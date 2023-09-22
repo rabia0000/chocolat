@@ -16,7 +16,7 @@ body header #logo {
 }
 body header nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   font-size: 1.6em;
   background-color: #5b3e2c;
