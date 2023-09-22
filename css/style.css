@@ -25,10 +25,25 @@ body header nav a {
   text-decoration: none;
   color: white;
   padding: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 body header nav a:hover {
   background-color: #a79189;
   color: white;
+}
+@media (max-width: 560px) {
+  body nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body a {
+    text-align: center;
+  }
+  body a:hover {
+    background-color: #a79189;
+  }
 }
 body .container {
   display: flex;
@@ -44,6 +59,7 @@ body .container section {
 body .container section img {
   margin-top: 1rem;
   width: 95%;
+  border-radius: 10px;
 }
 body .container section h2 {
   text-align: center;
@@ -53,6 +69,11 @@ body .container section h2 {
   color: white;
   border-radius: 1.5rem;
   padding: 1rem 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+}
+body .container section p {
+  font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 960px) {
   body .container section {
@@ -63,6 +84,7 @@ body .container section h2 {
   }
   body .container img {
     width: 100%;
+    margin: 0 auto;
   }
   body .container h2 {
     width: 100%;
@@ -84,9 +106,12 @@ body aside h2 {
   color: white;
   border-radius: 10px;
   padding: 1rem 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
 }
 body aside p {
   margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
   width: 70%;
 }
 
