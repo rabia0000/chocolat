@@ -34,10 +34,12 @@ body {
                 color: $color;
                 padding: 10px;
                 font-family: $font-h;
+                transition : all  0.6s ease;
             }
             a:hover{
-                background-color: #a79189; 
-                color: $color;
+               background-color:#a79189;
+               cursor: pointer;
+                
             }
 
         }
