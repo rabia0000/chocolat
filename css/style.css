@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 10%;
-  background-color: #048b9a;
+  background-color: #1b8b8f;
 }
 body header {
   width: 100%;
@@ -11,7 +11,7 @@ body header {
   flex-direction: column;
 }
 body header #logo {
-  width: 30%;
+  width: 25%;
   margin: 0 auto;
 }
 body header nav {
@@ -20,34 +20,28 @@ body header nav {
   justify-content: space-evenly;
   flex-wrap: wrap;
   font-size: 1.6em;
-  background-color: #63412b;
-  padding: 2%;
+  background-color: #5b3e2c;
 }
 body header nav a {
-  /*margin: 0 3.1em; */
   text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+body header nav a:hover {
+  background-color: #a79189;
   color: white;
 }
 
-/* element h2 */
 .container {
   display: flex;
   flex-wrap: wrap;
-  border: 5px solid black;
-}
-@media (max-width: 960px) {
-  .container .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
 }
 .container section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 65%;
-  border: 2px solid red;
+  background-color: #448088;
 }
 .container section img {
   margin-top: 1rem;
@@ -57,7 +51,7 @@ body header nav a {
   text-align: center;
   width: 100%;
   font-size: 1.4em;
-  background-color: #63412b;
+  background-color: #5b3e2c;
   color: white;
   border-radius: 1.5rem;
 }
@@ -66,7 +60,6 @@ body header nav a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 6px solid green;
     width: 100%;
   }
   .container img {
@@ -78,7 +71,6 @@ body header nav a {
 }
 
 aside {
-  border: 2px solid rgb(170, 14, 14);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -86,24 +78,33 @@ aside {
   background-color: white;
 }
 aside h2 {
-  width: 100%;
+  margin: 1rem auto;
+  width: 95%;
   text-align: center;
   font-size: 1.4em;
-  background-color: #63412b;
+  background-color: #5b3e2c;
   color: white;
-  border-radius: 1.5rem;
+  border-radius: 10px;
+  padding: 1rem 0;
 }
 aside p {
-  width: 100%;
+  margin: 0 auto;
+  width: 70%;
 }
 
 @media (max-width: 960px) {
   .container aside {
-    border: 5px solid green;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    background-color: red;
+  }
+}
+@media (max-width: 560px) {
+  .container aside {
+    display: none;
+  }
+  body {
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
