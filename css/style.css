@@ -33,20 +33,25 @@ body header nav a {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  border: 5px solid black;
+}
+@media (max-width: 960px) {
+  .container .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .container section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
-  width: 68%;
+  width: 65%;
   border: 2px solid red;
 }
 .container section img {
   margin-top: 1rem;
-  width: 100%;
-  border-radius: 10px;
+  width: 95%;
 }
 .container section h2 {
   text-align: center;
@@ -54,6 +59,22 @@ body header nav a {
   font-size: 1.4em;
   background-color: #63412b;
   color: white;
+  border-radius: 1.5rem;
+}
+@media (max-width: 960px) {
+  .container section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 6px solid green;
+    width: 100%;
+  }
+  .container img {
+    width: 100%;
+  }
+  .container h2 {
+    width: 100%;
+  }
 }
 
 aside {
@@ -61,9 +82,8 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 30%;
+  width: 34%;
   background-color: white;
-  justify-content: flex-start;
 }
 aside h2 {
   width: 100%;
@@ -71,4 +91,19 @@ aside h2 {
   font-size: 1.4em;
   background-color: #63412b;
   color: white;
+  border-radius: 1.5rem;
+}
+aside p {
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .container aside {
+    border: 5px solid green;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: red;
+  }
 }/*# sourceMappingURL=style.css.map */
